@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
     <title>Netflix</title>
 </head>
 
@@ -48,16 +49,6 @@
         <video src="trailer.mp4" controls="true"></video>
         <img src="close.png" class="close" onclick="toggleVideo();">
     </div>
-
-    <script type="text/javascript">
-        function toggleVideo() {
-            const trailer = document.querySelector(".trailer");
-            const video = document.querySelector('video');
-            trailer.classList.toggle("active")
-            video.currentTime = 0;
-            video.pause();
-        }
-    </script>
 </body>
 
 </html>
